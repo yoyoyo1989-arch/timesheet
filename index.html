@@ -264,6 +264,72 @@ footer.foot{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items
 .addp h3{font-size:16px;margin-bottom:10px}
 .addp .fld{flex:1;min-width:160px}
 @media (max-width:640px){.trow{grid-template-columns:40px 1fr}.trow .fld,.trow .btn{grid-column:1/-1}}
+select.jobsel{width:100%;font-weight:600;font-size:13.5px;padding:5px 8px;border-radius:8px;margin-bottom:4px;border-color:var(--line)}
+.grid input.nm{margin-top:2px}
+.split{display:grid;grid-template-columns:minmax(300px,390px) minmax(0,1fr);gap:18px;align-items:start;margin-top:18px}
+.lpane{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.tabs{display:flex;flex-wrap:wrap;gap:0 2px;padding:0 10px;border-bottom:1px solid var(--line)}
+.tab{border:0;background:none;padding:14px 9px 11px;font-weight:600;color:var(--ink2);border-bottom:3px solid transparent;display:flex;gap:7px;align-items:center;font-size:14px;margin-bottom:-1px}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.tab .ct{background:var(--soft);border:1px solid var(--line);border-radius:6px;padding:0 7px;font-size:12px;color:var(--ink2)}
+.lsearch{padding:12px 14px;border-bottom:1px solid var(--line)}
+.lsearch input{width:100%}
+.lpane .money{padding:10px 16px;margin:0;border-bottom:1px solid var(--line);font-size:13px;gap:4px 20px}
+.lpane .money b{font-size:15px}
+.lsum{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 10px;padding:12px 16px;background:var(--soft);font-size:13.5px;border-bottom:1px solid var(--line)}
+.mrow{display:flex;gap:12px;align-items:center;width:100%;text-align:left;border:0;border-bottom:1px solid var(--line);background:var(--card);padding:12px 14px 12px 12px;border-left:4px solid transparent}
+.mrow:last-child{border-bottom:0}
+.mrow:hover{background:var(--soft)}
+.mrow.sel{background:var(--accent-soft);border-left-color:var(--accent)}
+.mi{flex:1;min-width:0;display:flex;flex-direction:column}
+.mi b{font-weight:600;display:flex;gap:6px;align-items:center}
+.mi .sb{font-size:12.5px;color:var(--ink2)}
+.noem{color:var(--accent-text);font-weight:600}
+.mr{display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none}
+.mnum{font-size:12.5px;color:var(--ink2)}
+.wi{color:var(--rej);display:inline-flex}
+.lpane .empty{padding:30px 16px}
+.lpane .empty svg{width:84px;height:84px}
+.panelwrap{position:sticky;top:12px;min-width:0}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;display:flex;flex-direction:column;max-height:calc(100vh - 24px);overflow:hidden}
+.phead{display:flex;gap:10px;align-items:center;padding:14px 18px;border-bottom:1px solid var(--line)}
+.phead select{font-family:var(--head);font-weight:600;font-size:18px;padding:6px 10px;border-radius:10px;min-width:0;max-width:100%}
+.pbody{overflow:auto;display:grid;grid-template-columns:minmax(0,1fr) 250px;flex:1}
+.pmain{padding:18px;min-width:0}
+.pside{border-left:1px solid var(--line);padding:4px 16px 16px}
+.pbox{padding:14px 0 4px}
+.pbox h4{margin:0 0 6px;font-family:var(--head);font-size:14px;font-weight:600}
+.fbox{border:1px solid var(--line2);border-radius:8px;padding:9px 12px;background:var(--field);min-height:40px;font-size:14px;overflow-wrap:anywhere}
+.fbox.muted{color:var(--ink2);text-align:center}
+.pfields{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-bottom:14px}
+.fl{display:block;font-size:13px;color:var(--ink2);margin-bottom:4px;font-weight:500}
+.sec{border-top:1px solid var(--line);padding:12px 0 4px}
+.sec>summary{cursor:pointer;font-weight:600;display:flex;gap:10px;align-items:center;list-style:none}
+.sec>summary::-webkit-details-marker{display:none}
+.sec>summary::after{content:'›';margin-left:auto;font-size:20px;line-height:1;color:var(--ink3);transform:rotate(90deg);transition:transform .15s}
+.sec[open]>summary::after{transform:rotate(-90deg)}
+.sec .sn{font-weight:500;font-size:13px;color:var(--ink2)}
+.sec .sn.warn{color:var(--accent-text);font-weight:600}
+.sec>:not(summary){margin-top:12px}
+.checks.flat{border:0;padding:0;background:transparent;margin:12px 0 4px}
+.panel .gridwrap{margin-bottom:8px}
+.panel .grid .first{min-width:190px;max-width:190px}
+.preason{padding:14px 18px;border-top:1px solid var(--line);background:var(--soft)}
+.preason .chips{margin:8px 0 10px}
+.pfoot{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;padding:14px 18px;border-top:1px solid var(--line)}
+.ptot{font-size:14px}
+.ptot b{font-family:var(--head);font-size:20px;font-weight:600;margin:0 2px}
+.dlg.mid{max-width:820px}
+.jrow{display:grid;grid-template-columns:minmax(0,2fr) 110px minmax(0,1.3fr) auto;gap:10px;align-items:center;margin-bottom:10px}
+.jrow .fld,.jrow select{width:100%}
+@media (max-width:1000px){.pbody{grid-template-columns:1fr}.pside{border-left:0;border-top:1px solid var(--line)}}
+@media (max-width:900px){
+  .split{grid-template-columns:1fr}
+  .panelwrap{display:none;position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding:calc(12px + env(safe-area-inset-top,0px)) 12px calc(12px + env(safe-area-inset-bottom,0px))}
+  .panelwrap.mopen{display:block}
+  .panel{max-height:none;overflow:visible}
+}
+@media (max-width:640px){.jrow{grid-template-columns:1fr 1fr}.jrow .fld:first-child{grid-column:1/-1}}
 @media (max-width:860px){
   .two{grid-template-columns:1fr}
   .item{grid-template-columns:1fr 1fr}
@@ -301,7 +367,7 @@ footer.foot{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px 20px;align-items
 <script>
 (function(){
 'use strict';
-var KEY='auditor-timesheet-v2';
+var KEY='auditor-timesheet-v3';
 var MFULLS=['January','February','March','April','May','June','July','August','September','October','November','December'];
 var MSHORT=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 var PY,PM,MFULL,MNAME,PERIOD,DEADLINE,DLAB,ND,DAYS;
@@ -317,15 +383,17 @@ function prevYm(ym){var p=ym.split('-'),y=+p[0],m=+p[1]-1;if(m<1){m=12;y--}retur
 var MANAGER={name:'Raymond Goh',title:'Audit Manager'};
 var CATS=[['AU','Audit'],['SE','Secretarial'],['AC','Account'],['TP','Tax – partnership'],['TI','Tax – personal'],['TC','Tax – company'],['LI','Liquidation'],['HK','Admin / housekeeping'],['ST','Statistics'],['UA','Unassigned'],['LE','Leave (AL / ML / unpaid)'],['OT','Other']];
 setPeriod('2026-10');
-var PRESETS=[
- {key:'A',name:'Harbourline Logistics – FY26 statutory audit',code:'AU-2601',cat:'AU'},
- {key:'B',name:'Kopi & Co Holdings – interim audit',code:'AU-2614',cat:'AU'},
- {key:'C',name:'Seletar Precision – audit completion',code:'AU-2588',cat:'AU'},
- {key:'G',name:'Tan Family Office – tax computation',code:'TC-0932',cat:'TC'},
- {key:'D',name:'Admin and housekeeping',code:'HK',cat:'HK'},
- {key:'F',name:'Unassigned, waiting for work',code:'UA',cat:'UA'},
- {key:'E',name:'Annual or medical leave',code:'LE',cat:'LE'}
+var DEFAULT_JOBS=[
+ {id:'A',name:'Harbourline Logistics – FY26 statutory audit',code:'AU-2601',cat:'AU'},
+ {id:'B',name:'Kopi & Co Holdings – interim audit',code:'AU-2614',cat:'AU'},
+ {id:'C',name:'Seletar Precision – audit completion',code:'AU-2588',cat:'AU'},
+ {id:'G',name:'Tan Family Office – tax computation',code:'TC-0932',cat:'TC'},
+ {id:'D',name:'Admin and housekeeping',code:'HK',cat:'HK'},
+ {id:'F',name:'Unassigned, waiting for work',code:'UA',cat:'UA'},
+ {id:'E',name:'Annual or medical leave',code:'LE',cat:'LE'}
 ];
+var JOBS=[];
+function jobById(id){return JOBS.filter(function(j){return j.id===id})[0]}
 var DEFAULT_STAFF=[
  {id:'aisha',name:'Aisha Rahman',email:'aisha.rahman@example.com'},
  {id:'daniel',name:'Daniel Tan',email:'daniel.tan@example.com'},
@@ -354,10 +422,10 @@ function badge(s){return '<span class="badge '+ST[s].cls+'"><i></i>'+ST[s].label
 
 /* ---------- seed data ---------- */
 var uid=0;function nid(){return 'r'+(++uid)+Math.random().toString(36).slice(2,6)}
-function preset(k){return PRESETS.filter(function(p){return p.key===k})[0]}
+function preset(k){return DEFAULT_JOBS.filter(function(p){return p.id===k})[0]}
 function build(plan){
   var rows={};
-  function row(k){if(!rows[k]){var p=preset(k);rows[k]={id:nid(),name:p.name,code:p.code,cat:p.cat,h:{},k:k}}return rows[k]}
+  function row(k){if(!rows[k]){var p=preset(k);rows[k]={id:nid(),jid:k,name:p.name,code:p.code,cat:p.cat,h:{},k:k}}return rows[k]}
   DAYS.forEach(function(x){
     if(x.we)return;
     if(plan.leave.indexOf(x.d)>-1){row('E').h[x.d]=8;return}
@@ -365,7 +433,7 @@ function build(plan){
     if(plan.hk)row('D').h[x.d]=1;
   });
   Object.keys(plan.extra||{}).forEach(function(d){var e=plan.extra[d];row(e[0]).h[d]=e[1]});
-  var order=PRESETS.map(function(p){return p.key});
+  var order=DEFAULT_JOBS.map(function(p){return p.id});
   return Object.keys(rows).map(function(k){return rows[k]}).sort(function(a,b){return order.indexOf(a.k)-order.indexOf(b.k)}).map(function(r){delete r.k;return r});
 }
 function mkSheets(defs,ym){
@@ -389,17 +457,17 @@ function seed(){
   Object.keys(leaves).forEach(function(id){
     sep[id]={plan:{leave:leaves[id],hk:1,sched:function(){return ['A',7]}},tr:{2:10,9:10,16:10},status:'approved',sub:'2026-10-03T10:00',dec:'2026-10-06T15:00',note:'',emailed:true,claim:'Taxi to client site.'};
   });
-  var out={v:2,thr:2,staff:DEFAULT_STAFF.map(function(x){return {id:x.id,name:x.name,email:x.email}}),sheets:{}};
+  var out={v:3,thr:2,staff:DEFAULT_STAFF.map(function(x){return {id:x.id,name:x.name,email:x.email}}),jobs:DEFAULT_JOBS.map(function(x){return {id:x.id,name:x.name,code:x.code,cat:x.cat}}),sheets:{}};
   out.sheets['2026-10']=mkSheets(oct,'2026-10');
   out.sheets['2026-09']=mkSheets(sep,'2026-09');
   setPeriod((UI&&UI.ym)||'2026-10');
   return out;
 }
 var S=load();
-STAFF=S.staff;
-var UI={role:'staff',me:'hafiz',filter:'all',ym:'2026-10'};
+STAFF=S.staff;JOBS=S.jobs;
+var UI={role:'staff',me:'hafiz',filter:'all',ym:'2026-10',q:'',dsel:'',dnote:'',mopen:false};
 var modal=null,lastFocus=null,saveT=null;
-function load(){try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);if(o&&o.v===2&&o.staff&&o.staff.length&&o.sheets)return o}}catch(e){}return seed()}
+function load(){try{var raw=localStorage.getItem(KEY);if(raw){var o=JSON.parse(raw);if(o&&o.v===3&&o.staff&&o.staff.length&&o.jobs&&o.sheets)return o}}catch(e){}return seed()}
 function save(){
   try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}
   var el=q('#saved');if(el){el.textContent='Saved';clearTimeout(saveT);saveT=setTimeout(function(){el.textContent=''},1600)}
@@ -469,9 +537,17 @@ function gridHTML(sh,ro){
   sh.rows.forEach(function(r){
     h+='<tr data-row="'+r.id+'"><td class="first">';
     if(ro)h+='<div class="nmt">'+esc(r.name||'Untitled engagement')+'</div><div class="sub2">'+esc(r.code)+' · '+esc(catLabel(r.cat))+'</div>';
-    else h+='<input class="nm" data-r="'+r.id+'" data-f="name" value="'+esc(r.name)+'" placeholder="Engagement or client" aria-label="Engagement name">'
-      +'<div class="sub"><input class="cd" data-r="'+r.id+'" data-f="code" value="'+esc(r.code)+'" placeholder="Code" aria-label="Engagement code">'
-      +'<select data-r="'+r.id+'" data-f="cat" aria-label="Category">'+catOpts(r.cat)+'</select></div>';
+    else{
+      var linked=r.jid&&jobById(r.jid);
+      h+='<select class="jobsel" data-r="'+r.id+'" data-f="job" aria-label="Job">'
+        +'<option value=""'+(linked?'':' selected')+'>Custom job</option>'
+        +JOBS.map(function(j){return '<option value="'+j.id+'"'+(linked&&j.id===r.jid?' selected':'')+'>'+esc(j.name)+'</option>'}).join('')
+        +'<option value="__manage">Manage jobs…</option></select>';
+      if(linked)h+='<div class="sub2">'+esc(r.code)+' · '+esc(catLabel(r.cat))+'</div>';
+      else h+='<input class="nm" data-r="'+r.id+'" data-f="name" value="'+esc(r.name)+'" placeholder="Job or client name" aria-label="Job name">'
+        +'<div class="sub"><input class="cd" data-r="'+r.id+'" data-f="code" value="'+esc(r.code)+'" placeholder="Code" aria-label="Job code">'
+        +'<select data-r="'+r.id+'" data-f="cat" aria-label="Category">'+catOpts(r.cat)+'</select></div>';
+    }
     h+='</td>';
     DAYS.forEach(function(x){
       var v=r.h[x.d];
@@ -520,7 +596,7 @@ function staffHTML(){
   if(!sh.rows.length){
     h+='<section class="card mt empty"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><rect x="18" y="26" width="84" height="76" rx="14" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3"/><path d="M18 50h84" style="stroke:var(--accent)" stroke-width="3"/><path d="M40 16v18M80 16v18" style="stroke:var(--accent)" stroke-width="4" stroke-linecap="round"/><path d="M42 78l12 12 26-28" style="stroke:var(--ink3)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2 9"/></svg>'
       +'<h3>Nothing logged for '+MFULL+' yet</h3><p>Hi '+esc(first(me.name))+', start by adding the engagements you worked on. Then use quick fill to cover a whole stretch of days in one go.</p>'
-      +'<div class="chips">'+PRESETS.map(function(p){return '<button type="button" class="chipbtn" data-act="addp" data-k="'+p.key+'">'+esc(p.name)+'</button>'}).join('')+'</div>'
+      +'<div class="chips">'+JOBS.map(function(p){return '<button type="button" class="chipbtn" data-act="addp" data-k="'+p.id+'">'+esc(p.name)+'</button>'}).join('')+'</div>'
       +(prevRows(UI.me).length?'<p style="margin:0 0 14px"><button type="button" class="btn" data-act="copyprev">Copy last month’s engagements</button></p>':'')
       +'<button type="button" class="linkbtn" data-act="addp" data-k="blank">Or add a blank engagement</button></section>';
   }else{
@@ -532,7 +608,7 @@ function staffHTML(){
       +'<button type="button" class="btn primary" data-act="qfill">Fill weekdays</button><span class="small muted">Weekends are skipped.</span></section>';
     h+='<section class="card mt"><div class="gh"><h2 style="font-size:20px">Hours by day</h2>'
       +'<div class="legend"><span><i class="sw we"></i>Weekend</span><span><i class="sw low"></i>Low manpower</span><span><i class="sw tr"></i>Transport</span></div>'
-      +(edit?'<select id="addSel" aria-label="Add engagement"><option value="">Add engagement…</option>'+PRESETS.map(function(p){return '<option value="'+p.key+'">'+esc(p.name)+'</option>'}).join('')+'<option value="blank">Other engagement (blank row)</option></select>':'')
+      +(edit?'<select id="addSel" aria-label="Add engagement"><option value="">Add engagement…</option>'+JOBS.map(function(p){return '<option value="'+p.id+'">'+esc(p.name)+'</option>'}).join('')+'<option value="blank">Custom job (blank row)</option><option value="__manage">Manage jobs…</option></select>':'')
       +'</div>'+gridHTML(sh,!edit)+'</section>';
     h+='<div class="two"><section class="card" id="sum">'+summaryHTML(sh)+'</section>'
       +'<section class="card"><h3 style="font-size:18px">Transport claim note</h3><p class="muted small" style="margin:6px 0 10px">Say where you travelled and where your receipts are. Your manager approves this together with your hours.</p>'
@@ -566,65 +642,95 @@ function refresh(){
 }
 
 /* ---------- manager view ---------- */
+var TABS=[['all','All'],['pending','Pending'],['approved','Approved'],['rejected','Rejected'],['draft','Not submitted']];
+var WARNSVG='<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2 1 21h22L12 2zm1 15h-2v-2h2v2zm0-4h-2V9h2v4z"/></svg>';
+function firstPendingId(){
+  var l=STAFF.filter(function(x){return SH(x.id).status==='pending'});
+  l.sort(function(a,b){return (pendKind(SH(a.id))==='review'?0:1)-(pendKind(SH(b.id))==='review'?0:1)});
+  return l.length?l[0].id:(STAFF[0]?STAFF[0].id:null);
+}
+function filtered(){
+  var qv=(UI.q||'').toLowerCase().trim(),order={pending:0,rejected:1,draft:2,approved:3};
+  return STAFF.filter(function(x){return (UI.filter==='all'||SH(x.id).status===UI.filter)&&(!qv||x.name.toLowerCase().indexOf(qv)>-1)})
+    .sort(function(a,b){return (order[SH(a.id).status]-order[SH(b.id).status])||a.name.localeCompare(b.name)});
+}
+function rowHTML(x){
+  var sh=SH(x.id),fl=flags(sh).filter(function(f){return f.lvl==='warn'}).length,sub;
+  if(sh.status==='draft')sub=sh.rows.length?'Still editing':'Nothing logged yet';
+  else if(sh.status==='pending')sub=pendKind(sh)==='query'?'Query sent '+fmtD(sh.decidedAt):'Submitted '+fmtD(sh.submittedAt);
+  else sub=(sh.status==='approved'?'Approved ':'Rejected ')+fmtD(sh.decidedAt);
+  var em=(sh.decidedAt&&sh.status!=='draft')?'<span class="'+(sh.emailed?'':'noem')+'"> · '+(sh.emailed?'emailed':'email not sent')+'</span>':'';
+  var warn=(sh.status!=='draft'&&fl)?'<span class="wi" role="img" aria-label="'+fl+' check'+(fl>1?'s':'')+' to look at" title="'+fl+' check'+(fl>1?'s':'')+' to look at">'+WARNSVG+'</span>':'';
+  return '<button type="button" class="mrow'+(UI.sel===x.id?' sel':'')+'" data-act="review" data-id="'+x.id+'" aria-current="'+(UI.sel===x.id)+'">'
+    +'<span class="av" aria-hidden="true">'+esc(initials(x.name))+'</span>'
+    +'<span class="mi"><b>'+esc(x.name)+warn+'</b><span class="sb">'+esc(sub)+em+'</span></span>'
+    +'<span class="mr">'+badge(sh.status)+'<span class="mnum">'+fh(hoursTot(sh))+' h · '+money(trTot(sh))+'</span></span></button>';
+}
+function listHTML(){
+  var list=filtered(),th=0,tt=0;
+  list.forEach(function(x){var sh=SH(x.id);th+=hoursTot(sh);tt+=trTot(sh)});
+  var lab=UI.filter==='all'?'All timesheets':TABS.filter(function(t){return t[0]===UI.filter})[0][1];
+  var h='<div class="lsum"><b>'+lab+'</b><span class="muted">'+list.length+' timesheet'+(list.length===1?'':'s')+' · '+fh(th)+' h · '+money(tt)+'</span></div>';
+  if(!list.length)h+='<div class="empty"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M30 52h54v26a16 16 0 0 1-16 16H46a16 16 0 0 1-16-16z" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3" stroke-linejoin="round"/><path d="M84 58h6a9 9 0 0 1 0 18h-6" style="stroke:var(--accent)" stroke-width="3"/><path d="M44 40c0-6 6-6 6-12M60 40c0-6 6-6 6-12" style="stroke:var(--ink3)" stroke-width="3" stroke-linecap="round"/></svg><h3>You’re all caught up</h3><p>Nothing matches here. New submissions appear as soon as staff send them.</p><button type="button" class="btn sm" data-act="filter" data-f="all">Show all timesheets</button></div>';
+  else h+=list.map(rowHTML).join('');
+  return h;
+}
 function managerHTML(){
   var cov=cover(),due=dueInfo(),counts={all:STAFF.length,pending:0,approved:0,rejected:0,draft:0},awaiting=0,toPay=0;
-  STAFF.forEach(function(s){var sh=SH(s.id);counts[sh.status]++;if(sh.status==='pending')awaiting+=trTot(sh);if(sh.status==='approved')toPay+=trTot(sh)});
+  STAFF.forEach(function(x){var sh=SH(x.id);counts[sh.status]++;if(sh.status==='pending')awaiting+=trTot(sh);if(sh.status==='approved')toPay+=trTot(sh)});
+  if(UI.sel===undefined||(UI.sel&&!staffById(UI.sel)))UI.sel=firstPendingId();
   var h='<section class="mhead"><h1>Review '+MFULL+' timesheets</h1><p>Due before '+DLAB+' · '+due.t+'. Approving a timesheet approves its transport claim too. Mark it pending if something is not cleared, or reject it if the hours or claim are wrong.</p></section>';
-  var tiles=[['all','All timesheets','var(--ink3)'],['pending','Pending','var(--pend)'],['approved','Approved','var(--appr)'],['rejected','Rejected','var(--rej)'],['draft','Not submitted','var(--draft)']];
-  h+='<div class="tiles" role="group" aria-label="Filter by status">'+tiles.map(function(t){return '<button type="button" class="tile" data-act="filter" data-f="'+t[0]+'" aria-pressed="'+(UI.filter===t[0])+'"><span class="n">'+counts[t[0]]+'</span><span class="l"><i style="background:'+t[2]+'"></i>'+t[1]+'</span></button>'}).join('')+'</div>';
-  h+='<div class="money"><span>Transport awaiting approval <b>'+money(awaiting)+'</b></span><span>Approved for disbursement <b>'+money(toPay)+'</b></span></div>';
   var ld=lowDays(cov);
   h+='<section class="card cover mt"><div class="row"><div><h3>Team cover</h3><p class="muted small" style="margin:4px 0 0">Auditors in each weekday, worked out from leave in the timesheets. '+(ld.length?'<span class="lowtag">'+ld.length+' low-manpower date'+(ld.length>1?'s':'')+'</span> '+dlist(ld)+'.':'No low-manpower dates.')+'</p></div><span class="sp"></span>'
     +'<div class="step" role="group" aria-label="Low manpower threshold"><span class="small muted">Flag when</span><button type="button" data-act="thr" data-n="-1" aria-label="Lower threshold">−</button><b>'+S.thr+' or fewer</b><button type="button" data-act="thr" data-n="1" aria-label="Raise threshold">+</button><span class="small muted">of '+STAFF.length+' are in</span></div></div>'
     +'<div class="strip" role="list">'+DAYS.map(function(x){var c=cov[x.d];return '<div role="listitem" class="cvd '+(x.we?'we':'')+' '+(c.low?'low':'')+'" title="'+esc(x.we?x.d+' '+MNAME+' (weekend)':x.d+' '+MNAME+': '+c.avail+' of '+STAFF.length+' in'+(c.off.length?'. Off: '+c.off.join(', '):''))+'"><b>'+x.d+'</b>'+(x.we?'–':c.avail+' in')+'</div>'}).join('')+'</div></section>';
-  var order={pending:0,rejected:1,draft:2,approved:3};
-  var list=STAFF.filter(function(s){return UI.filter==='all'||SH(s.id).status===UI.filter}).sort(function(a,b){var A=SH(a.id),B=SH(b.id);return (order[A.status]-order[B.status])||a.name.localeCompare(b.name)});
-  if(!list.length)h+='<div class="card mt empty"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><path d="M30 52h54v26a16 16 0 0 1-16 16H46a16 16 0 0 1-16-16z" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3" stroke-linejoin="round"/><path d="M84 58h6a9 9 0 0 1 0 18h-6" style="stroke:var(--accent)" stroke-width="3"/><path d="M44 40c0-6 6-6 6-12M60 40c0-6 6-6 6-12" style="stroke:var(--ink3)" stroke-width="3" stroke-linecap="round"/></svg><h3>You’re all caught up</h3><p>Nothing to show under this filter. New submissions will appear here as soon as staff send them.</p><button type="button" class="btn" data-act="filter" data-f="all">Show all timesheets</button></div>';
-  else h+='<div class="list">'+list.map(function(s){return itemHTML(s)}).join('')+'</div>';
+  h+='<div class="split"><section class="lpane" aria-label="Timesheets"><div class="tabs" role="tablist">'
+    +TABS.map(function(t){return '<button type="button" role="tab" class="tab" data-act="filter" data-f="'+t[0]+'" aria-selected="'+(UI.filter===t[0])+'">'+t[1]+'<span class="ct">'+counts[t[0]]+'</span></button>'}).join('')+'</div>'
+    +'<div class="lsearch"><label class="sr" for="mq">Search people</label><input class="fld" id="mq" type="search" placeholder="Search name" value="'+esc(UI.q||'')+'"></div>'
+    +'<div class="money"><span>Transport awaiting approval <b>'+money(awaiting)+'</b></span><span>Approved <b>'+money(toPay)+'</b></span></div>'
+    +'<div id="mlist">'+listHTML()+'</div></section>'
+    +'<section class="panelwrap'+(UI.mopen?' mopen':'')+'" aria-label="Timesheet details">'+panelHTML()+'</section></div>';
   return h;
-}
-function itemHTML(s){
-  var sh=SH(s.id),fl=flags(sh).filter(function(f){return f.lvl==='warn'}).length,sub,em='';
-  if(sh.status==='draft')sub=sh.rows.length?'Still editing':'Nothing logged yet';
-  else if(sh.status==='pending')sub=pendKind(sh)==='query'?'Query sent '+fmtD(sh.decidedAt):'Submitted '+fmtD(sh.submittedAt)+(fl?' · '+fl+' check'+(fl>1?'s':'')+' to look at':' · no flags');
-  else sub=(sh.status==='approved'?'Approved ':'Rejected ')+fmtD(sh.decidedAt);
-  if(sh.decidedAt&&sh.status!=='draft')em=sh.emailed?'<span class="em">✓ Staff emailed</span>':'<button type="button" class="linkbtn small" data-act="email" data-id="'+s.id+'">Write email to staff</button>';
-  else if(sh.status==='pending')em='<span class="em">Awaiting your decision</span>';
-  var needs=sh.status==='pending'&&pendKind(sh)==='review';
-  return '<div class="item"><div class="who"><span class="av" aria-hidden="true">'+esc(initials(s.name))+'</span><div><b>'+esc(s.name)+'</b><span>'+esc(sub)+'</span></div></div>'
-    +'<div class="num"><b>'+fh(hoursTot(sh))+' h</b><span>Hours</span></div><div class="num"><b>'+money(trTot(sh))+'</b><span>Transport</span></div>'
-    +'<div class="stcol">'+badge(sh.status)+em+'</div>'
-    +'<div class="go"><button type="button" class="btn'+(needs?' primary':'')+'" data-act="review" data-id="'+s.id+'">'+(sh.status==='draft'?'View':'Review')+'</button></div></div>';
 }
 
 /* ---------- review + email dialogs ---------- */
-function reviewHTML(){
-  var s=staffById(modal.id),sh=SH(s.id),fl=flags(sh),lv=Object.keys(leaveMap(sh)).length;
+function panelHTML(){
+  var id=UI.sel,st=id?staffById(id):null;
+  if(!st)return '<div class="panel"><div class="empty"><svg viewBox="0 0 120 120" fill="none" aria-hidden="true"><rect x="26" y="18" width="68" height="86" rx="12" style="fill:var(--accent-soft);stroke:var(--accent)" stroke-width="3"/><path d="M44 46h32M44 62h32M44 78h20" style="stroke:var(--ink3)" stroke-width="4" stroke-linecap="round"/></svg><h3>Pick a timesheet to review</h3><p>Choose someone from the list. Their hours, transport and checks appear here, and you can decide in one click.</p></div></div>';
+  var sh=SH(id),fl=flags(sh),warns=fl.filter(function(f){return f.lvl==='warn'}).length,lv=Object.keys(leaveMap(sh)).length;
   var wd=DAYS.filter(function(x){return !x.we&&dayTot(sh,x.d)>0}).length,cd=Object.keys(sh.tr).filter(function(d){return Number(sh.tr[d])>0}).length;
-  var h='<div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dt" tabindex="-1"><div class="dh"><div><h2 id="dt">'+esc(s.name)+'</h2><div class="row" style="margin-top:6px">'+badge(sh.status)+'<span class="muted small">'+PERIOD+(sh.submittedAt?' · submitted '+fmtD(sh.submittedAt):'')+'</span></div></div><div class="row"><button type="button" class="btn sm" data-act="editsheet">Edit timesheet</button><button type="button" class="xbtn" data-act="close" aria-label="Close">×</button></div></div>';
-  h+='<div class="facts"><div class="fact"><span>Total hours</span><b>'+fh(hoursTot(sh))+' h</b></div><div class="fact"><span>Days worked</span><b>'+wd+'</b></div><div class="fact"><span>Leave days</span><b>'+lv+'</b></div><div class="fact"><span>Transport claim</span><b>'+money(trTot(sh))+'</b><span>'+cd+' day'+(cd===1?'':'s')+'</span></div></div>';
-  h+='<div class="checks"><h3>Checks</h3><ul>'+(fl.length?fl.map(function(f){return '<li class="'+f.lvl+'"><span class="dot" aria-hidden="true">'+(f.lvl==='warn'?'!':'i')+'</span><span>'+esc(f.text)+'</span></li>'}).join(''):'<li class="good"><span class="dot" aria-hidden="true">✓</span><span>No problems found. Hours and transport look consistent.</span></li>')+'</ul></div>';
-  h+=gridHTML(sh,true);
-  if(String(sh.claim||'').trim())h+='<p class="note"><b>Transport note:</b> '+esc(sh.claim)+'</p>';
-  if(sh.note&&sh.status!=='draft')h+='<p class="note"><b>Your earlier note to staff:</b> '+esc(sh.note)+'</p>';
-  if(sh.status==='draft'){h+='<div class="decide"><p style="margin:0" class="muted">This timesheet has not been submitted, so there is nothing to decide yet.</p></div>'}
-  else{
-    h+='<div class="decide"><h3>Your decision</h3><div class="row"><button type="button" class="btn appr" data-act="approve">Approve hours and transport</button>'
-      +'<button type="button" class="btn pendb" data-act="sel" data-s="pending" aria-pressed="'+(modal.sel==='pending')+'">Mark pending</button>'
-      +'<button type="button" class="btn rejb" data-act="sel" data-s="rejected" aria-pressed="'+(modal.sel==='rejected')+'">Reject</button></div>';
-    if(modal.sel){
-      var warnT=fl.filter(function(f){return f.lvl==='warn'}).slice(0,3).map(function(f){return f.text});
-      var base=modal.sel==='rejected'?['Hours don’t add up.','Transport claim is wrong.','Days are missing.','Wrong engagement code.']:['Waiting for the engagement partner to confirm hours.','Need transport receipts.','Query on weekend work.'];
-      var chips=warnT.concat(base);
-      h+='<div class="reason"><label class="lb" for="decNote">'+(modal.sel==='rejected'?'What needs fixing? Staff will see this in the email.':'What is not cleared yet? Staff will see this in the email.')+'</label>'
-        +'<div class="chips" style="margin-top:8px">'+chips.map(function(c,i){return '<button type="button" class="chipbtn" data-act="chip" data-i="'+i+'">'+esc(c.length>60?c.slice(0,58)+'…':c)+'</button>'}).join('')+'</div>'
-        +'<textarea id="decNote" placeholder="Short and specific, so it can be fixed in one go.">'+esc(modal.note)+'</textarea>'
-        +'<div class="row" style="margin-top:12px"><button type="button" class="btn primary" data-act="confirmdec" id="confirmDec"'+(modal.note.trim()?'':' disabled')+'>'+(modal.sel==='rejected'?'Reject and write email':'Mark pending and write email')+'</button><button type="button" class="btn" data-act="sel" data-s="">Cancel</button></div></div>';
-      modal.chips=chips;
-    }
-    h+='</div>';
+  var h='<div class="panel"><div class="phead"><span class="av" aria-hidden="true">'+esc(initials(st.name))+'</span><label class="sr" for="panelSel">Timesheet of</label>'
+    +'<select id="panelSel">'+STAFF.map(function(x){return '<option value="'+x.id+'"'+(x.id===id?' selected':'')+'>'+esc(x.name)+'</option>'}).join('')+'</select><span class="sp"></span>'
+    +'<button type="button" class="btn sm" data-act="editsheet">Edit timesheet</button><button type="button" class="xbtn" data-act="closepanel" aria-label="Close details">×</button></div>';
+  h+='<div class="pbody"><div class="pmain">'
+    +'<div class="pfields"><div><span class="fl">Period</span><div class="fbox">'+PERIOD+'</div></div><div><span class="fl">Status</span><div class="fbox">'+badge(sh.status)+'</div></div><div><span class="fl">Submitted</span><div class="fbox">'+(sh.submittedAt?fmtD(sh.submittedAt):'Not yet')+'</div></div></div>'
+    +'<div class="facts"><div class="fact"><span>Total hours</span><b>'+fh(hoursTot(sh))+' h</b></div><div class="fact"><span>Days worked</span><b>'+wd+'</b></div><div class="fact"><span>Leave days</span><b>'+lv+'</b></div><div class="fact"><span>Transport</span><b>'+money(trTot(sh))+'</b><span>'+cd+' day'+(cd===1?'':'s')+'</span></div></div>'
+    +'<details class="sec" open><summary>Checks<span class="sn'+(warns?' warn':'')+'">'+(warns?warns+' to look at':'All clear')+'</span></summary><div class="checks flat"><ul>'
+    +(fl.length?fl.map(function(f){return '<li class="'+f.lvl+'"><span class="dot" aria-hidden="true">'+(f.lvl==='warn'?'!':'i')+'</span><span>'+esc(f.text)+'</span></li>'}).join(''):'<li class="good"><span class="dot" aria-hidden="true">✓</span><span>No problems found. Hours and transport look consistent.</span></li>')
+    +'</ul></div></details>'
+    +'<details class="sec" open><summary>Hours by day<span class="sn">'+fh(hoursTot(sh))+' h</span></summary>'+gridHTML(sh,true)+'</details>'
+    +'<details class="sec"><summary>Hours by category</summary><div>'+summaryHTML(sh)+'</div></details>'
+    +'</div><aside class="pside">'
+    +'<div class="pbox"><h4>Transport claim</h4><div class="fbox">'+money(trTot(sh))+' <span class="muted small">· '+cd+' day'+(cd===1?'':'s')+'</span></div></div>'
+    +'<div class="pbox"><h4>Staff comment</h4><div class="fbox'+(String(sh.claim||'').trim()?'':' muted')+'">'+(String(sh.claim||'').trim()?esc(sh.claim):'No comment')+'</div></div>'
+    +'<div class="pbox"><h4>Your note to staff</h4><div class="fbox'+(sh.note&&sh.status!=='draft'?'':' muted')+'">'+(sh.note&&sh.status!=='draft'?esc(sh.note):'No note')+'</div></div>'
+    +((sh.decidedAt&&sh.status!=='draft')?'<div class="pbox"><h4>Email to staff</h4><div class="fbox muted">'+(sh.emailed?'✓ Emailed':'Not sent yet')+'</div><button type="button" class="btn sm" style="margin-top:8px" data-act="email" data-id="'+id+'">'+(sh.emailed?'Write again':'Write email')+'</button></div>':'')
+    +'</aside></div>';
+  if(UI.dsel&&sh.status!=='draft'){
+    var warnT=fl.filter(function(f){return f.lvl==='warn'}).slice(0,3).map(function(f){return f.text});
+    var base=UI.dsel==='rejected'?['Hours don’t add up.','Transport claim is wrong.','Days are missing.','Wrong engagement code.']:['Waiting for the engagement partner to confirm hours.','Need transport receipts.','Query on weekend work.'];
+    UI.chips=warnT.concat(base);
+    h+='<div class="preason"><label class="lb" for="decNote">'+(UI.dsel==='rejected'?'What needs fixing? Staff will see this in the email.':'What is not cleared yet? Staff will see this in the email.')+'</label>'
+      +'<div class="chips">'+UI.chips.map(function(c,i){return '<button type="button" class="chipbtn" data-act="chip" data-i="'+i+'">'+esc(c.length>60?c.slice(0,58)+'…':c)+'</button>'}).join('')+'</div>'
+      +'<textarea id="decNote" placeholder="Short and specific, so it can be fixed in one go.">'+esc(UI.dnote)+'</textarea>'
+      +'<div class="row" style="margin-top:12px"><button type="button" class="btn primary" data-act="confirmdec" id="confirmDec"'+(UI.dnote.trim()?'':' disabled')+'>'+(UI.dsel==='rejected'?'Reject and write email':'Mark pending and write email')+'</button><button type="button" class="btn" data-act="sel" data-s="">Cancel</button></div></div>';
   }
-  return h+'</div>';
+  h+='<div class="pfoot"><div class="ptot">Total <b>'+fh(hoursTot(sh))+' h</b><span class="muted"> · '+money(trTot(sh))+'</span></div><span class="sp"></span>';
+  if(sh.status==='draft')h+='<span class="muted small">Not submitted yet. Nothing to decide.</span>';
+  else h+='<button type="button" class="btn rejb" data-act="sel" data-s="rejected" aria-pressed="'+(UI.dsel==='rejected')+'">Reject</button>'
+    +'<button type="button" class="btn pendb" data-act="sel" data-s="pending" aria-pressed="'+(UI.dsel==='pending')+'">Mark pending</button>'
+    +'<button type="button" class="btn appr" data-act="approve"'+(sh.status==='approved'?' disabled':'')+'>'+(sh.status==='approved'?'Approved':'Approve')+'</button>';
+  return h+'</div></div>';
 }
 function composeEmail(s,sh){
   var th=fh(hoursTot(sh)),tr=money(trTot(sh)),cd=Object.keys(sh.tr).filter(function(d){return Number(sh.tr[d])>0}).length,n=sh.note?sh.note.trim():'';
@@ -697,17 +803,51 @@ function removePerson(id){
     save();swapModal({type:'team'});toast(p.name+' removed');
   },function(){swapModal({type:'team'})});
 }
-function editSheet(){
-  var id=modal.id,sh=SH(id),st=staffById(id);
+function editSheet(id){
+  var sh=SH(id),st=staffById(id);if(!st)return;
   function go(){
     if(sh.status==='pending'||sh.status==='approved'){sh.status='draft';sh.decidedAt=null;sh.note='';sh.emailed=false;save()}
-    UI.me=id;UI.role='staff';
+    UI.me=id;UI.role='staff';UI.dsel='';UI.dnote='';
     try{history.replaceState(null,'','#staff')}catch(e){}
     closeModal();render();window.scrollTo(0,0);toast('Editing '+first(st.name)+'’s timesheet. Submit it again when done.');
   }
-  if(sh.status==='pending'||sh.status==='approved')
-    askModal('Reopen this timesheet?',st.name+'’s '+PERIOD+' timesheet goes back to Not submitted. It needs to be submitted and decided again.','Reopen and edit',go,function(){swapModal({type:'review',id:id,sel:'',note:''})});
-  else go();
+  if(sh.status==='pending'||sh.status==='approved'){
+    lastFocus=document.activeElement;
+    askModal('Reopen this timesheet?',st.name+'’s '+PERIOD+' timesheet goes back to Not submitted. It needs to be submitted and decided again.','Reopen and edit',go,function(){closeModal()});
+  }else go();
+}
+function jobsHTML(){
+  var h='<div class="dlg mid" role="dialog" aria-modal="true" aria-labelledby="dt" tabindex="-1"><div class="dh"><div><h2 id="dt">Manage jobs</h2><p class="muted small" style="margin:4px 0 0">Edits update every timesheet that uses the job. Deleting a job keeps its name on existing timesheets.</p></div><button type="button" class="xbtn" data-act="close" aria-label="Close">×</button></div>';
+  h+=JOBS.length?'<div>'+JOBS.map(function(j){return '<div class="jrow"><input class="fld" data-jid="'+j.id+'" data-jf="name" data-old="'+esc(j.name)+'" value="'+esc(j.name)+'" aria-label="Job name">'
+    +'<input class="fld" data-jid="'+j.id+'" data-jf="code" value="'+esc(j.code)+'" placeholder="Code" aria-label="Job code">'
+    +'<select data-jid="'+j.id+'" data-jf="cat" aria-label="Category">'+catOpts(j.cat)+'</select>'
+    +'<button type="button" class="btn sm rejb" data-act="rmjob" data-id="'+j.id+'">Delete</button></div>'}).join('')+'</div>'
+    :'<p class="muted">No jobs yet. Add your first one below, then pick it from any timesheet.</p>';
+  h+='<div class="addp"><h3>Add a job</h3><div class="row"><input class="fld" id="njName" placeholder="Client or job name" aria-label="Client or job name"><input class="fld" id="njCode" placeholder="Code" style="max-width:120px" aria-label="Job code"><select id="njCat" aria-label="Category">'+catOpts('AU')+'</select><button type="button" class="btn primary" data-act="addjob">Add job</button></div><p class="note" id="jobErr" role="alert"></p></div></div>';
+  return h;
+}
+function jobsEdit(t,final){
+  var j=jobById(t.dataset.jid);if(!j)return;
+  var f=t.dataset.jf,v=f==='cat'?t.value:t.value.trim();
+  if(f==='name'&&!v){if(final){t.value=t.dataset.old;toast('A job needs a name')}return}
+  j[f]=v;if(f==='name')t.dataset.old=v;
+  Object.keys(S.sheets).forEach(function(ym){Object.keys(S.sheets[ym]).forEach(function(id){S.sheets[ym][id].rows.forEach(function(r){if(r.jid===j.id)r[f]=v})})});
+  save();
+}
+function addJob(){
+  var n=q('#njName').value.trim(),c=q('#njCode').value.trim(),k=q('#njCat').value,err=q('#jobErr');
+  if(!n){err.textContent='Enter a client or job name.';q('#njName').focus();return}
+  JOBS.push({id:'j'+Date.now().toString(36),name:n,code:c,cat:k});save();
+  swapModal({type:'jobs'});var nn=q('#njName');if(nn)nn.focus();
+  toast('Added “'+n+'”. Pick it from any timesheet.');
+}
+function removeJob(id){
+  var j=jobById(id);if(!j)return;
+  askModal('Delete “'+j.name+'”?','Existing timesheets keep this job’s name, code and category, but it will no longer be linked or appear in the job list.','Delete job',function(){
+    JOBS.splice(JOBS.indexOf(j),1);
+    Object.keys(S.sheets).forEach(function(ym){Object.keys(S.sheets[ym]).forEach(function(pid){S.sheets[ym][pid].rows.forEach(function(r){if(r.jid===id)r.jid=''})})});
+    save();swapModal({type:'jobs'});toast('Job deleted');
+  },function(){swapModal({type:'jobs'})});
 }
 function openModal(m){
   lastFocus=document.activeElement;modal=m;drawModal();
@@ -716,10 +856,10 @@ function openModal(m){
 }
 function drawModal(){
   var root=q('#modal');
-  root.innerHTML=modal.type==='review'?reviewHTML():modal.type==='email'?emailHTML():modal.type==='team'?teamHTML():modal.type==='ask'?askHTML():confirmHTML();
+  root.innerHTML=modal.type==='email'?emailHTML():modal.type==='team'?teamHTML():modal.type==='jobs'?jobsHTML():modal.type==='ask'?askHTML():confirmHTML();
 }
 function closeModal(){
-  var wasTeam=modal&&modal.type==='team';modal=null;var root=q('#modal');root.classList.remove('open');root.innerHTML='';
+  var wasTeam=modal&&(modal.type==='team'||modal.type==='jobs');modal=null;var root=q('#modal');root.classList.remove('open');root.innerHTML='';
   if(lastFocus&&document.contains(lastFocus)&&lastFocus.focus)lastFocus.focus();
   if(wasTeam)render();
 }
@@ -731,7 +871,7 @@ function monthBarHTML(){
   return '<div class="mbar"><div class="row"><button type="button" class="btn sm" data-act="month" data-n="-1" aria-label="Previous month"'+(i<=0?' disabled':'')+'>‹</button>'
     +'<label class="sr" for="ymSel">Month</label><select id="ymSel">'+L.map(function(ym){return '<option value="'+ym+'"'+(ym===UI.ym?' selected':'')+'>'+ymLabel(ym)+'</option>'}).join('')+'</select>'
     +'<button type="button" class="btn sm" data-act="month" data-n="1" aria-label="Next month"'+(i>=L.length-1?' disabled':'')+'>›</button></div>'
-    +'<span class="sp"></span><button type="button" class="btn sm" data-act="team">Manage team ('+STAFF.length+')</button></div>';
+    +'<span class="sp"></span><button type="button" class="btn sm" data-act="jobs">Manage jobs ('+JOBS.length+')</button><button type="button" class="btn sm" data-act="team">Manage team ('+STAFF.length+')</button></div>';
 }
 function setMonth(ym){if(ymList().indexOf(ym)<0)return;UI.ym=ym;setPeriod(ym);render();window.scrollTo(0,0)}
 function render(){
@@ -743,8 +883,8 @@ function render(){
 }
 function setRole(v){UI.role=(v==='manager')?'manager':'staff';if(modal)closeModal();render();window.scrollTo(0,0)}
 function addRow(k){
-  var sh=cur(),p=k==='blank'?{name:'',code:'',cat:'AU'}:preset(k);
-  sh.rows.push({id:nid(),name:p.name,code:p.code,cat:p.cat,h:{}});save();render();
+  var sh=cur(),p=k==='blank'?{name:'',code:'',cat:'AU'}:(jobById(k)||{name:'',code:'',cat:'AU'});
+  sh.rows.push({id:nid(),jid:k==='blank'?'':k,name:p.name,code:p.code,cat:p.cat,h:{}});save();render();
   var nm=qa('#grid input.nm');if(k==='blank'&&nm.length)nm[nm.length-1].focus();
 }
 function quickFill(){
@@ -765,14 +905,12 @@ function doSubmit(){
   save();if(modal)closeModal();render();window.scrollTo(0,0);
   toast('Submitted. It now shows as Pending for your manager.');
 }
-function decide(status,note){
-  var sh=SH(modal.id),id=modal.id;
+function decide(id,status,note){
+  var sh=SH(id);
   sh.status=status;sh.note=note||'';sh.decidedAt=new Date().toISOString();sh.emailed=false;save();
   var em=composeEmail(staffById(id),sh);
-  render();
-  lastFocus=null;
-  modal={type:'email',id:id,subject:em.subject,body:em.body};drawModal();
-  var d=q('.dlg');if(d)d.focus();q('#modal').scrollTop=0;
+  UI.dsel='';UI.dnote='';render();
+  openModal({type:'email',id:id,subject:em.subject,body:em.body});
   toast(ST[status].label+'. The email to '+first(staffById(id).name)+' is ready.');
 }
 function markEmailed(){
@@ -791,7 +929,7 @@ document.addEventListener('click',function(e){
   if(t.dataset.view){var v=t.dataset.view;if(location.hash.replace('#','')===v)setRole(v);else location.hash=v;return}
   var a=t.dataset.act;
   switch(a){
-    case 'reset':S=seed();STAFF=S.staff;if(!staffById(UI.me))UI.me=STAFF[0].id;save();if(modal)closeModal();render();toast('Sample data restored');break;
+    case 'reset':S=seed();STAFF=S.staff;JOBS=S.jobs;if(!staffById(UI.me))UI.me=STAFF[0].id;save();if(modal)closeModal();render();toast('Sample data restored');break;
     case 'delrow':var sh=cur();sh.rows=sh.rows.filter(function(r){return r.id!==t.dataset.r});save();render();break;
     case 'addp':addRow(t.dataset.k);break;
     case 'qfill':quickFill();break;
@@ -800,21 +938,25 @@ document.addEventListener('click',function(e){
     case 'edit':var c=cur();c.status='draft';save();render();window.scrollTo(0,0);toast('You can edit now. Submit again when you’re done.');break;
     case 'filter':UI.filter=t.dataset.f;render();break;
     case 'thr':S.thr=Math.max(0,Math.min(STAFF.length,S.thr+Number(t.dataset.n)));save();render();break;
-    case 'review':openModal({type:'review',id:t.dataset.id,sel:'',note:''});break;
+    case 'review':UI.sel=t.dataset.id;UI.dsel='';UI.dnote='';UI.mopen=true;render();break;
+    case 'closepanel':UI.mopen=false;UI.sel=null;UI.dsel='';UI.dnote='';render();break;
+    case 'jobs':openModal({type:'jobs'});break;
+    case 'addjob':addJob();break;
+    case 'rmjob':removeJob(t.dataset.id);break;
     case 'email':var st=staffById(t.dataset.id),em=composeEmail(st,SH(st.id));openModal({type:'email',id:st.id,subject:em.subject,body:em.body});break;
     case 'close':closeModal();break;
-    case 'sel':modal.sel=t.dataset.s;modal.note='';drawModal();var n=q('#decNote');if(n)n.focus();break;
-    case 'chip':var txt=modal.chips[+t.dataset.i];modal.note=(modal.note.trim()?modal.note.trim()+' ':'')+txt;drawModal();var n2=q('#decNote');if(n2){n2.focus();n2.setSelectionRange(n2.value.length,n2.value.length)}break;
-    case 'approve':decide('approved','');break;
-    case 'confirmdec':if(modal.note.trim())decide(modal.sel==='rejected'?'rejected':'pending',modal.note.trim());break;
+    case 'sel':UI.dsel=t.dataset.s;UI.dnote='';render();var n=q('#decNote');if(n)n.focus();break;
+    case 'chip':var txt=UI.chips[+t.dataset.i];UI.dnote=(UI.dnote.trim()?UI.dnote.trim()+' ':'')+txt;render();var n2=q('#decNote');if(n2){n2.focus();n2.setSelectionRange(n2.value.length,n2.value.length)}break;
+    case 'approve':decide(UI.sel,'approved','');break;
+    case 'confirmdec':if(UI.dnote.trim())decide(UI.sel,UI.dsel==='rejected'?'rejected':'pending',UI.dnote.trim());break;
     case 'month':var L=ymList(),ni=L.indexOf(UI.ym)+Number(t.dataset.n);if(ni>=0&&ni<L.length)setMonth(L[ni]);break;
     case 'team':openModal({type:'team'});break;
     case 'addperson':addPerson();break;
     case 'rmperson':removePerson(t.dataset.id);break;
     case 'askok':modal.ok();break;
     case 'askno':modal.back();break;
-    case 'editsheet':editSheet();break;
-    case 'copyprev':var pr=prevRows(UI.me),cs=cur();cs.rows=pr.map(function(r){return {id:nid(),name:r.name,code:r.code,cat:r.cat,h:{}}});save();render();toast('Copied '+pr.length+' engagement'+(pr.length===1?'':'s')+' from '+ymLabel(prevYm(UI.ym)));break;
+    case 'editsheet':editSheet(UI.sel);break;
+    case 'copyprev':var pr=prevRows(UI.me),cs=cur();cs.rows=pr.map(function(r){return {id:nid(),jid:r.jid||'',name:r.name,code:r.code,cat:r.cat,h:{}}});save();render();toast('Copied '+pr.length+' engagement'+(pr.length===1?'':'s')+' from '+ymLabel(prevYm(UI.ym)));break;
     case 'mailed':markEmailed();toast('Marked as emailed. Your mail app should open with the draft.');break;
     case 'copy':copyText('To: '+staffById(modal.id).email+'\nSubject: '+modal.subject+'\n\n'+modal.body).then(function(ok){if(ok){markEmailed();toast('Email copied and marked as emailed')}else toast('Could not copy. Select the text and copy it by hand.')});break;
   }
@@ -830,11 +972,13 @@ function parseCell(t){
 }
 document.addEventListener('input',function(e){
   var t=e.target;
+  if(t.id==='mq'){UI.q=t.value;var ml=q('#mlist');if(ml)ml.innerHTML=listHTML();return}
+  if(t.dataset&&t.dataset.jid){jobsEdit(t,false);return}
   if(t.dataset&&t.dataset.tid){teamEdit(t,false);return}
   if(t.matches&&t.matches('input.c')){if(parseCell(t)){refresh();save()}return}
   if(t.dataset&&t.dataset.f&&t.dataset.r&&(t.dataset.f==='name'||t.dataset.f==='code')){var r=cur().rows.filter(function(x){return x.id===t.dataset.r})[0];if(r){r[t.dataset.f]=t.value;save()}return}
   if(t.dataset&&t.dataset.f==='claim'){cur().claim=t.value;save();return}
-  if(modal&&t.id==='decNote'){modal.note=t.value;var b=q('#confirmDec');if(b)b.disabled=!t.value.trim();return}
+  if(t.id==='decNote'){UI.dnote=t.value;var b=q('#confirmDec');if(b)b.disabled=!t.value.trim();return}
   if(modal&&(t.id==='emSub'||t.id==='emBody')){
     if(t.id==='emSub')modal.subject=t.value;else modal.body=t.value;
     var s=staffById(modal.id);q('#emOpen').href='mailto:'+encodeURIComponent(s.email)+'?subject='+encodeURIComponent(modal.subject)+'&body='+encodeURIComponent(modal.body);
@@ -843,9 +987,17 @@ document.addEventListener('input',function(e){
 document.addEventListener('change',function(e){
   var t=e.target;
   if(t.id==='ymSel'){setMonth(t.value);return}
+  if(t.id==='panelSel'){UI.sel=t.value;UI.dsel='';UI.dnote='';render();return}
+  if(t.dataset&&t.dataset.jid){jobsEdit(t,true);return}
   if(t.dataset&&t.dataset.tid){teamEdit(t,true);return}
+  if(t.dataset&&t.dataset.f==='job'){
+    var rr=cur().rows.filter(function(x){return x.id===t.dataset.r})[0];if(!rr)return;
+    if(t.value==='__manage'){render();openModal({type:'jobs'});return}
+    if(t.value===''){rr.jid=''}else{var jb=jobById(t.value);if(jb){rr.jid=jb.id;rr.name=jb.name;rr.code=jb.code;rr.cat=jb.cat}}
+    save();render();return;
+  }
   if(t.id==='meSel'){UI.me=t.value;render();window.scrollTo(0,0);return}
-  if(t.id==='addSel'){if(t.value)addRow(t.value);return}
+  if(t.id==='addSel'){if(t.value==='__manage'){t.value='';openModal({type:'jobs'});return}if(t.value)addRow(t.value);return}
   if(t.dataset&&t.dataset.f==='cat'){var r=cur().rows.filter(function(x){return x.id===t.dataset.r})[0];if(r){r.cat=t.value;save();refresh()}return}
   if(t.matches&&t.matches('input.c')&&!t.classList.contains('err')){var v=Number(t.value.replace(',','.'));if(t.value.trim()!==''&&!isNaN(v))t.value=t.dataset.r==='tr'?String(v):fh(v)}
 });
