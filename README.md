@@ -2,6 +2,9 @@
 
 A single-page prototype for monthly auditor timesheets: staff log hours and transport claims, the manager approves, marks pending or rejects, and drafts an email to the staff member.
 
+- Months: use the month picker at the top. Each month has its own timesheets; the deadline is the 25th of the following month.
+- Team: **Manage team** adds, renames or removes people. Removing someone deletes their timesheets in every month.
+- Edit: managers can open any timesheet and choose **Edit timesheet**. Approved or pending sheets are reopened as Not submitted.
 - Static site: one `index.html`, no build step, no dependencies.
 - Data is stored in the visitor's browser (`localStorage`). There is no login or backend yet.
 - Fonts load from Google Fonts; the page falls back to system fonts if offline.
